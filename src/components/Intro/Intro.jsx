@@ -17,6 +17,7 @@ import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import { GithubURL, InstaURL, LinkedInURL } from "../../constants/myurls";
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -30,11 +31,10 @@ const Intro = () => {
       {/* left name side */}
       <div className="i-left">
         <div className="i-name">
-          {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span>Deepak Madambi</span>
           <span>
-            A Software Engineer, Tech consultant, Creator, Wonderer and Mentor. 
+            A passionate Software Engineer and Creative Technologist, dedicated to crafting innovative solutions. Join me as we explore a world where code transforms into art and ideas come to life.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
@@ -42,10 +42,11 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          {/* <img src={Github} alt="" /> */}
           
-          <a href="https://www.linkedin.com/in/deepakmadambi/" target={"_blank"}><img src={LinkedIn} alt="" /></a>
-          <a href="https://www.instagram.com/maddyonhusqy/"  target={"_blank"} ><img src={Instagram} alt="" /></a>
+          
+          <a href={LinkedInURL} target={"_blank"}><img src={LinkedIn} alt="" /></a>
+          <a href={InstaURL}  target={"_blank"} ><img src={Instagram} alt="" /></a>
+          <a href={GithubURL}  target={"_blank"} ><img src={Github} alt="" /></a>
           
         </div>
       </div>
@@ -53,7 +54,9 @@ const Intro = () => {
       <div className="i-right">
         <img src={BG1} alt="" />
         <img src={BG3} alt="" />
-        <img src={Deepak} alt="" height={"70%"} />
+        <img src={Deepak} alt="" height={"80%"} />
+        <img src={BG3} height={"10%"} />
+
         {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}
@@ -69,7 +72,7 @@ const Intro = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Software" text2="Engineer" />
+          <FloatinDiv img={crown} text1="Mentor" text2="" />
         </motion.div>
 
         {/* animation */}
@@ -80,7 +83,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Mentor" text2="" />
+          <FloatinDiv img={thumbup} text1="Software Engineer" text2="" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>

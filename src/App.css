@@ -3,7 +3,7 @@
   --yellow: #F5C32C;
     --orange : #F67E3C;
     --black : #242D49;
-    --gray : #788097;
+    --gray : #858383;
     --blueCard : #DDF8FE;
     --purple: rgb(238 210 255);
     --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
@@ -18,8 +18,8 @@
 }
 
 .button {
-    background: linear-gradient(180deg, #9B1BB7 26.71%, #F320B6 99.36%);
-    /* box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42); */
+    background: linear-gradient(180deg, #F5C32C 26.71%, #F5C32C 99.36%);
+    box-shadow: 0px 20px 24px 3px rgba(228, 157, 64, 0.1);
     border-radius: 34px;
     border: none;
     color: white;
